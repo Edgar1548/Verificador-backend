@@ -19,11 +19,11 @@ class Profiles(db.Model):
         self.email = email
         self.public_key = public_key
 
-@app.route('/')
+@app.route('/api')
 def get_keys():
     return ''
 
-@app.route('/', methods = ['POST'])
+@app.route('/api', methods = ['POST'])
 def add_key():
     return ''
     
